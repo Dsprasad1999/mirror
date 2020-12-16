@@ -131,7 +131,7 @@ def main():
     if path.exists('restart.pickle'):
         with open('restart.pickle', 'rb') as status:
             restart_message = pickle.load(status)
-        restart_message.edit_text("<b>⛽ Mʏ Sᴇʀᴠɪᴄᴇs Rᴇsᴛᴀʀᴛᴇᴅ Sᴜᴄᴄᴇssꜰᴜʟʟʏ!</b>")
+        restart_message.edit_text("⛽ 𝐌𝐲 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬 𝐑𝐞𝐬𝐭𝐚𝐫𝐭𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲!")
         remove('restart.pickle')
 
     start_handler = CommandHandler(BotCommands.StartCommand, start)
