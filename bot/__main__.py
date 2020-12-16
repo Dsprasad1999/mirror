@@ -32,7 +32,7 @@ def stats(update, context):
             f'<b>⦿ Tᴏᴛᴀʟ Dɪsᴋ Sᴘᴀᴄᴇ:</b> {total}\n' \
             f'<b>⦿ Usᴇᴅ:</b> {used}  ' \
             f'<b>Free:</b> {free}\n\n' \
-            f' \n📊⁍Dᴀᴛᴀ Usᴀɢᴇ⁌📊\n<b>⦿Uᴘʟᴏᴀᴅ:</b> {sent}\n' \
+            f' \n<b>📊⁍Dᴀᴛᴀ Usᴀɢᴇ⁌📊</b>\n<b>⦿Uᴘʟᴏᴀᴅ:</b> {sent}\n' \
             f'<b>⦿ Dᴏᴡɴ:</b> {recv}\n\n' \
             f'<b>⦿ CPU:</b> {cpuUsage}% ' \
             f'<b>⦿ RAM:</b> {memory}% ' \
@@ -45,7 +45,7 @@ def start(update, context):
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id,update.message.chat.username,update.message.text))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         if update.message.chat.type == "private" :
-            sendMessage(f"<b>Hɪ👋</b>  <b>{update.message.chat.first_name}</b>.  <b>Wᴇʟᴄᴏᴍᴇ Tᴏ Vɪᴋɪɴɢ's Mɪʀʀᴏʀ Bᴏᴛ Sᴇɴᴅ /help Tᴏ Cʜᴇᴄᴋ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ\n\n👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: @MortalViking</b>", context.bot, update)
+            sendMessage(f"<b>Hɪ👋</b>  <b>{update.message.chat.first_name}</b>.  <b>Wᴇʟᴄᴏᴍᴇ Tᴏ Mɪʀʀᴏʀ Bᴏᴛ Sᴇɴᴅ /help Tᴏ Cʜᴇᴄᴋ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ\n\n👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: @MortalViking</b>", context.bot, update)
         else :
             sendMessage("<b>I'ᴍ Aʟɪᴠᴇ Yᴀᴀʀ💞, ➼Tʜᴀɴᴋs Fᴏʀ Cʜᴇᴄᴋɪɴɢ😋🥰.</b>", context.bot, update)
     else :
