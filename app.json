@@ -8,8 +8,8 @@
       "aria",
       "python"
     ],
-    "repository": "https://github.com/mr-U-I1/AllSupport.git",
-    "website": "https://github.com/mr-U-I1/AllSupport/tree/master",
+    "repository": "https://github.com/sumanth445/ultimatemirror.git",
+    "website": "https://github.com/sumanth445/ultimatemirror/tree/master",
     "success_url": "https://github.com/mr-U-I1/AllSupport/blob/master/README.md",
     "stack": "container",
     "env": {
