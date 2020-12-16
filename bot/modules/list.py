@@ -10,7 +10,7 @@ def list_drive(update,context):
     try:
         search = update.message.text.split(' ',maxsplit=1)[1]
         LOGGER.info(f"Searching: {search}")
-        reply = sendMessage('<b>🔍Sᴇᴀʀᴄʜɪɴɢ...Pʟᴇᴀsᴇ Wᴀɪᴛ!</b>'', context.bot, update)
+        reply = sendMessage('<b>🔍Sᴇᴀʀᴄʜɪɴɢ...Pʟᴇᴀsᴇ Wᴀɪᴛ!</b>', context.bot, update)
         gdrive = GoogleDriveHelper(None)
         msg, button = gdrive.drive_list(search)
 
