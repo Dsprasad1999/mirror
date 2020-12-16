@@ -8,9 +8,9 @@
       "aria",
       "python"
     ],
-    "repository": "https://github.com/mr-U-I1/driveultimate1.git",
-    "website": "https://github.com/mr-U-I1/driveultimate1/tree/master",
-    "success_url": "https://github.com/mr-U-I1/driveultimate1/blob/master/README.md",
+    "repository": "https://github.com/mr-U-I1/AllSupport.git",
+    "website": "https://github.com/mr-U-I1/AllSupport/tree/master",
+    "success_url": "https://github.com/mr-U-I1/AllSupport/blob/master/README.md",
     "stack": "container",
     "env": {
       "ENV": {
@@ -41,7 +41,6 @@
       },
       "AUTO_DELETE_MESSAGE_DURATION": {
         "description": "Interval of time (in seconds), after which the bot deletes it's message (and command message) which is expected to be viewed instantly. Note: Set to -1 to never automatically delete messages.",
-        "value": "-1"
         "required": true
       },
       "IS_TEAM_DRIVE": {
@@ -93,14 +92,6 @@
         "required": false
       },
 	  "BUTTON_THREE_URL": {
-        "description": "    Two buttons are already added of Gdrive & index, you can add extra buttons, these are optional.",
-        "required": false
-      },
-          "BUTTON_FOUR_NAME": {
-        "description": "    Two buttons are already added of Gdrive & index, you can add extra buttons, these are optional.",
-        "required": false
-      },
-	  "BUTTON_FOUR_URL": {
         "description": "    Two buttons are already added of Gdrive & index, you can add extra buttons, these are optional.",
         "required": false
       }
