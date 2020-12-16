@@ -45,16 +45,16 @@ def start(update, context):
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id,update.message.chat.username,update.message.text))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         if update.message.chat.type == "private" :
-            sendMessage(f"Hey <b>{update.message.chat.first_name}</b>. Welcome to <b>LoaderX Bot</b>", context.bot, update)
+            sendMessage(f"<b>Hɪ👋</b>  <b>{update.message.chat.first_name}</b>.  <b>Wᴇʟᴄᴏᴍᴇ Tᴏ Vɪᴋɪɴɢ's Mɪʀʀᴏʀ Bᴏᴛ Sᴇɴᴅ /help Tᴏ Cʜᴇᴄᴋ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ\n\n👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: @MortalViking</b>", context.bot, update)
         else :
-            sendMessage("I'm alive :)", context.bot, update)
+            sendMessage("<b>I'ᴍ Aʟɪᴠᴇ Yᴀᴀʀ💞, ➼Tʜᴀɴᴋs Fᴏʀ Cʜᴇᴄᴋɪɴɢ😋🥰.</b>", context.bot, update)
     else :
-        sendMessage("Oops! not a authorized user.", context.bot, update)
+        sendMessage("<b>Oᴏᴘs!🤭 Yᴏᴜ Aʀᴇ Nᴏᴛ ᴀɴ Aᴜᴛʜᴏʀɪᴢᴇᴅ Usᴇʀ Tᴏ Usᴇ Mᴇ.</b>", context.bot, update)
 
 
 @run_async
 def restart(update, context):
-    restart_message = sendMessage("Restarting, Please wait!", context.bot, update)
+    restart_message = sendMessage("<b>⛽ Rᴇsᴛᴀʀᴛɪɴɢ Mʏ Sᴇʀᴠɪᴄᴇs, Pʟᴇᴀsᴇ Wᴀɪᴛ!</b>", context.bot, update)
     # Save restart message object in order to reply to it after restarting
     fs_utils.clean_all()
     with open('restart.pickle', 'wb') as status:
@@ -67,7 +67,7 @@ def ping(update, context):
     start_time = int(round(time.time() * 1000))
     reply = sendMessage("Starting Ping", context.bot, update)
     end_time = int(round(time.time() * 1000))
-    editMessage(f'{end_time - start_time} ms', reply)
+    editMessage(f'<b>{end_time - start_time} ᴍs</b>', reply)
 
 
 @run_async
@@ -77,53 +77,46 @@ def log(update, context):
 
 @run_async
 def bot_help(update, context):
-    help_string_adm = f'''
-/{BotCommands.StartCommand} <b>: Alive or Not</b>
-/{BotCommands.MirrorCommand} <b>[url OR magnet_link]: Mirror & upload</b>
-/{BotCommands.TarMirrorCommand} <b>[url OR magnet_link]: Mirror & upload as .tar</b>
-/{BotCommands.UnzipMirrorCommand} <b>[url OR magnet_link] : Unzip & mirror</b>
-/{BotCommands.WatchCommand} <b>[link]: Mirror YT video</b>
-/{BotCommands.TarWatchCommand} <b>[link]: Mirror YT video & upload as .tar</b>
-/{BotCommands.CloneCommand} <b>[link]: Mirror drive folder</b>
-/{BotCommands.CancelMirror} <b>: Reply to dwnld cmd</b>
-/{BotCommands.CancelAllCommand} <b>: Cancel all</b>
-/{BotCommands.StatusCommand} <b>: Shows a status of all the downloads</b>
-/{BotCommands.ListCommand} <b>[name]: Searches in the drive folder</b>
-/{BotCommands.deleteCommand} <b>[link]: Delete from drive[Only owner & sudo]</b>
-/{BotCommands.StatsCommand} <b>: Show Stats of the machine</b>
-/{BotCommands.PingCommand} <b>: Check ping!</b>
-/{BotCommands.RestartCommand} <b>: Restart bot(Only owner)</b>
-/{BotCommands.AuthorizeCommand} <b>: Authorize(Only owner & sudo)</b>
-/{BotCommands.UnAuthorizeCommand} <b>: Unauthorize(Only owner & sudo)</b>
-/{BotCommands.AuthorizedUsersCommand} <b>: authorized users(Only owner & sudo)</b>
-/{BotCommands.AddSudoCommand} <b>: Add sudo user(Only owner)</b>
-/{BotCommands.RmSudoCommand} <b>: Remove sudo users(Only owner)</b>
-/{BotCommands.LogCommand} <b>: Get log file(Only owner)</b>
-/{BotCommands.RestartCommand} <b>: Restart bot[Only owner & sudo]</b>
-/{BotCommands.AuthorizeCommand} <b>: Authorize[Only owner & sudo]</b>
-/{BotCommands.UnAuthorizeCommand} <b>: Unauthorize[Only owner & sudo]</b>
-/{BotCommands.AuthorizedUsersCommand} <b>: authorized users[Only owner & sudo]</b>
-/{BotCommands.AddSudoCommand} <b>: Add sudo user[Only owner]</b>
-/{BotCommands.RmSudoCommand} <b>: Remove sudo users[Only owner]</b>
-/{BotCommands.LogCommand} <b>: Get log file[Only owner & sudo]</b>
-
+    help_string_adm = f'''<b>🛰️Tʜᴇsᴇ Aʀᴇ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ👇👇</b>\n\n
+/{BotCommands.StartCommand} <b>: Cʜᴇᴄᴋ Wʜᴇᴛʜᴇʀ Bᴏᴛ Is Aʟɪᴠᴇ ᴏʀ Nᴏᴛ</b>
+/{BotCommands.MirrorCommand} <b>[url OR magnet_link]: Mɪʀʀᴏʀ Lɪɴᴋs & Uᴘʟᴏᴀᴅ</b>
+/{BotCommands.TarMirrorCommand} <b>[url OR magnet_link]: Mɪʀʀᴏʀ Lɪɴᴋs & Uᴘʟᴏᴀᴅ ᴀs .ᴛᴀʀ</b>
+/{BotCommands.UnzipMirrorCommand} <b>[url OR magnet_link] : Uɴᴢɪᴘ Lɪɴᴋs & Mɪʀʀᴏʀ</b>
+/{BotCommands.WatchCommand} <b>[link]: Mɪʀʀᴏʀ YT Vɪᴅᴇᴏ</b>
+/{BotCommands.TarWatchCommand} <b>[link]: Mɪʀʀᴏʀ YT Vɪᴅᴇᴏ & Uᴘʟᴏᴀᴅ ᴀs .ᴛᴀʀ</b>
+/{BotCommands.CloneCommand} <b>[link]: Mɪʀʀᴏʀs ᴀ G-Dʀɪᴠᴇ Lɪɴᴋ ᴏʀ ᴀ Fᴏʟᴅᴇʀ</b>
+/{BotCommands.CancelMirror} <b>: Rᴇᴘʟʏ Tᴏ /{BotCommands.MirrorCommand} Cᴏᴍᴍᴀɴᴅ ᴏʀ Eɴᴛᴇʀ /{BotCommands.CancelMirror} Cᴏᴍᴍᴀɴᴅ Gɪᴅ Tᴏ Cᴀɴᴄᴇʟ ᴀ Mɪʀʀᴏʀ Pʀᴏᴄᴇss</b>
+/{BotCommands.CancelAllCommand} <b>: Cᴀɴᴄᴇʟ Aʟʟ Mɪʀʀᴏʀ Pʀᴏᴄᴇssᴇs</b>
+/{BotCommands.StatusCommand} <b>: Sʜᴏᴡs ᴀ Sᴛᴀᴛᴜs Oꜰ Aʟʟ Tʜᴇ Dᴏᴡɴʟᴏᴀᴅs</b>
+/{BotCommands.ListCommand} <b>[name]: Sᴇᴀʀᴄʜᴇs Iɴ Tʜᴇ Oᴡɴᴇʀs Tᴇᴀᴍ ᴅʀɪᴠᴇ Fᴏʟᴅᴇʀ</b>
+/{BotCommands.deleteCommand} <b>[link]: Dᴇʟᴇᴛᴇ Fʀᴏᴍ Dʀɪᴠᴇ[Oɴʟʏ Oᴡɴᴇʀ & Sᴜᴅᴏ]</b>
+/{BotCommands.StatsCommand} <b>: Sʜᴏᴡ Sᴛᴀᴛs Oꜰ Tʜᴇ Mᴀᴄʜɪɴᴇ</b>
+/{BotCommands.PingCommand} <b>: Cʜᴇᴄᴋ Pɪɴɢ!</b>
+/{BotCommands.RestartCommand} <b>: Rᴇsᴛᴀʀᴛ Bᴏᴛ[Oɴʟʏ Oᴡɴᴇʀ & Sᴜᴅᴏ]</b>
+/{BotCommands.AuthorizeCommand} <b>: Aᴜᴛʜᴏʀɪᴢᴇ[Oɴʟʏ Oᴡɴᴇʀ & Sᴜᴅᴏ]</b>
+/{BotCommands.UnAuthorizeCommand} <b>: Uɴᴀᴜᴛʜᴏʀɪᴢᴇ[Oɴʟʏ Oᴡɴᴇʀ & Sᴜᴅᴏ]</b>
+/{BotCommands.AuthorizedUsersCommand} <b>: Aᴜᴛʜᴏʀɪᴢᴇᴅ Usᴇʀs[ᴏɴʟʏ Oᴡɴᴇʀ & Sᴜᴅᴏ]</b>
+/{BotCommands.AddSudoCommand} <b>: Aᴅᴅ Sᴜᴅᴏ Usᴇʀ[Oɴʟʏ Oᴡɴᴇʀ]</b>
+/{BotCommands.RmSudoCommand} <b>: Rᴇᴍᴏᴠᴇ Sᴜᴅᴏ Usᴇʀs[Oɴʟʏ Oᴡɴᴇʀ]</b>
+/{BotCommands.LogCommand} <b>: Gᴇᴛ Bᴏᴛ Lᴏɢ Fɪʟᴇ[Oɴʟʏ Oᴡɴᴇʀ & Sᴜᴅᴏ]</b>\n\n
+<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @MortalViking</b>
 '''
 
-    help_string = f'''
-/{BotCommands.StartCommand} <b>: Alive or Not</b>
-/{BotCommands.MirrorCommand} <b>[url OR magnet_link]: Mirror & upload</b>
-/{BotCommands.TarMirrorCommand} <b>[url OR magnet_link]: Mirror & upload as .tar</b>
-/{BotCommands.UnzipMirrorCommand} <b>[url OR magnet_link] : Unzip & mirror</b>
-/{BotCommands.WatchCommand} <b>[link]: Mirror YT video</b>
-/{BotCommands.TarWatchCommand} <b>[link]: Mirror YT video & upload as .tar</b>
-/{BotCommands.CloneCommand} <b>[link]: Mirror drive folder</b>
-/{BotCommands.CancelMirror} <b>: Reply to dwnld cmd</b>
-/{BotCommands.CancelAllCommand} <b>: Reply to dwnld cmd</b>
-/{BotCommands.StatusCommand} <b>: Shows a status of all the downloads</b>
-/{BotCommands.ListCommand} <b>[name]: Searches in the drive folder</b>
-/{BotCommands.StatsCommand} <b>: Show Stats of the machine</b>
-/{BotCommands.PingCommand} <b>: Check ping!</b>
-
+    help_string = f'''<b>🛰️Tʜᴇsᴇ Aʀᴇ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ👇👇</b>\n\n
+/{BotCommands.StartCommand} <b>: Cʜᴇᴄᴋ Wʜᴇᴛʜᴇʀ Bᴏᴛ Is Aʟɪᴠᴇ ᴏʀ Nᴏᴛ</b>
+/{BotCommands.MirrorCommand} <b>[url OR magnet_link]: Mɪʀʀᴏʀ Lɪɴᴋs & Uᴘʟᴏᴀᴅ</b>
+/{BotCommands.TarMirrorCommand} <b>[url OR magnet_link]: Mɪʀʀᴏʀ Lɪɴᴋs & Uᴘʟᴏᴀᴅ ᴀs .ᴛᴀʀ</b>
+/{BotCommands.UnzipMirrorCommand} <b>[url OR magnet_link] : Uɴᴢɪᴘ Lɪɴᴋs & Mɪʀʀᴏʀ</b>
+/{BotCommands.WatchCommand} <b>[link]: Mɪʀʀᴏʀ YT Vɪᴅᴇᴏ</b>
+/{BotCommands.TarWatchCommand} <b>[link]: Mɪʀʀᴏʀ YT Vɪᴅᴇᴏ & Uᴘʟᴏᴀᴅ ᴀs .ᴛᴀʀ</b>
+/{BotCommands.CloneCommand} <b>[link]: Mɪʀʀᴏʀs ᴀ G-Dʀɪᴠᴇ Lɪɴᴋ ᴏʀ ᴀ Fᴏʟᴅᴇʀ</b>
+/{BotCommands.CancelMirror} <b>: Rᴇᴘʟʏ Tᴏ /{BotCommands.MirrorCommand} Cᴏᴍᴍᴀɴᴅ ᴏʀ Eɴᴛᴇʀ /{BotCommands.CancelMirror} Cᴏᴍᴍᴀɴᴅ Gɪᴅ Tᴏ Cᴀɴᴄᴇʟ ᴀ Mɪʀʀᴏʀ Pʀᴏᴄᴇss</b>
+/{BotCommands.CancelAllCommand} <b>: Cᴀɴᴄᴇʟ Aʟʟ Mɪʀʀᴏʀ Pʀᴏᴄᴇssᴇs</b>
+/{BotCommands.StatusCommand} <b>: Sʜᴏᴡs ᴀ Sᴛᴀᴛᴜs Oꜰ Aʟʟ Tʜᴇ Dᴏᴡɴʟᴏᴀᴅs</b>
+/{BotCommands.ListCommand} <b>[name]: Sᴇᴀʀᴄʜᴇs Iɴ Tʜᴇ Oᴡɴᴇʀs Tᴇᴀᴍ ᴅʀɪᴠᴇ Fᴏʟᴅᴇʀ</b>
+/{BotCommands.StatsCommand} <b>: Sʜᴏᴡ Sᴛᴀᴛs Oꜰ Tʜᴇ Mᴀᴄʜɪɴᴇ</b>
+/{BotCommands.PingCommand} <b>: Cʜᴇᴄᴋ Pɪɴɢ!</b>\n\n
+<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @MortalViking</b>
 '''
 
     if CustomFilters.sudo_user(update) or CustomFilters.owner_filter(update):
@@ -138,7 +131,7 @@ def main():
     if path.exists('restart.pickle'):
         with open('restart.pickle', 'rb') as status:
             restart_message = pickle.load(status)
-        restart_message.edit_text("Restarted Successfully!")
+        restart_message.edit_text("<b>⛽ Mʏ Sᴇʀᴠɪᴄᴇs Rᴇsᴛᴀʀᴛᴇᴅ Sᴜᴄᴄᴇssꜰᴜʟʟʏ!</b>")
         remove('restart.pickle')
 
     start_handler = CommandHandler(BotCommands.StartCommand, start)
