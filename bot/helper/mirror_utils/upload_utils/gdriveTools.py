@@ -482,9 +482,9 @@ class GoogleDriveHelper:
                     content += f'<b> || <a href="https://telegra.ph/{self.path[nxt_page]}">Nᴇxᴛ👉</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = 'Vɪᴋɪɴɢs Sᴇᴀʀᴄʜ Iɴᴅᴇx',
-                                 author_name='@Mɪʀʀᴏʀʀᴢ',
-                                 author_url='https://t.me/Mirrorrz',
+                                 title = 'Aɴɪᴍᴀᴛᴇᴅ Sᴇᴀʀᴄʜ Iɴᴅᴇx',
+                                 author_name='Aɴɪᴍᴀᴛᴇᴅ',
+                                 author_url='https://t.me/ANIMATED_CLOUDZONE',
                                  html_content=content)
         return
 
@@ -509,7 +509,7 @@ class GoogleDriveHelper:
 
         content_count = 0
         if response["files"]:
-            msg += f'<h4>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h4><br>Tᴇʟᴇɢʀᴀᴍ @Mɪʀʀᴏʀʀᴢ #𝐌𝐢𝐫𝐫𝐨𝐫𝐳 🧲⛓️🔗<br><br>'
+            msg += f'<h4>Sᴇᴀʀᴄʜ Rᴇsᴜʟᴛs Fᴏʀ Yᴏᴜʀ Kᴇʏᴡᴏʀᴅ : {fileName}</h4><br>Tᴇʟᴇɢʀᴀᴍ @ANIMATED_CLOUDZONE<br><br>'
 
             for file in response.get('files', []):
                 if file.get('mimeType') == "application/vnd.google-apps.folder":  # Detect Whether Current Entity is a Folder or File.
@@ -557,9 +557,9 @@ class GoogleDriveHelper:
 
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = 'Vɪᴋɪɴɢs Sᴇᴀʀᴄʜ Iɴᴅᴇx',
-                                                        author_name='@Mɪʀʀᴏʀʀᴢ',
-                                                        author_url='https://t.me/Mirrorrz',
+                                                        title = 'Aɴɪᴍᴀᴛᴇᴅ Sᴇᴀʀᴄʜ Iɴᴅᴇx',
+                                                        author_name='Aɴɪᴍᴀᴛᴇᴅ',
+                                                        author_url='https://t.me/ANIMATED_CLOUDZONE',
                                                         html_content=content
                                                         )['path'])
 
