@@ -10,7 +10,7 @@
     ],
     "repository": "https://github.com/sumanth445/ultimatemirror.git",
     "website": "https://github.com/sumanth445/ultimatemirror/tree/master",
-    "success_url": "https://github.com/mr-U-I1/AllSupport/blob/master/README.md",
+    "success_url": "https://github.com/sumanth445/ultimatemirror/blob/master/README.md",
     "stack": "container",
     "env": {
       "ENV": {
