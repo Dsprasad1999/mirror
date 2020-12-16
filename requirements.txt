@@ -1,4 +1,5 @@
 requests
+progress
 psutil
 python-telegram-bot==12.6.1 
 google-api-python-client>=1.7.11,<1.7.20
@@ -11,7 +12,7 @@ python-magic
 beautifulsoup4>=4.8.2,<4.8.10
 Pyrogram>=0.16.0,<0.16.10
 TgCrypto>=1.1.1,<1.1.10
-youtube_dl
 psycopg2-binary
+youtube_dl
 lxml
 telegraph
