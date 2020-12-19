@@ -116,7 +116,7 @@ def bot_help(update, context):
 /{BotCommands.ListCommand} <b>[name]: Sᴇᴀʀᴄʜᴇs Iɴ Tʜᴇ Oᴡɴᴇʀs Tᴇᴀᴍ ᴅʀɪᴠᴇ Fᴏʟᴅᴇʀ</b>
 /{BotCommands.StatsCommand} <b>: Sʜᴏᴡ Sᴛᴀᴛs Oꜰ Tʜᴇ Mᴀᴄʜɪɴᴇ</b>
 /{BotCommands.PingCommand} <b>: Cʜᴇᴄᴋ Pɪɴɢ!</b>\n\n
-<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @MortalViking</b>
+<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @Cybertron_geek</b>
 '''
 
     if CustomFilters.sudo_user(update) or CustomFilters.owner_filter(update):
