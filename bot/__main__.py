@@ -99,7 +99,7 @@ def bot_help(update, context):
 /{BotCommands.AddSudoCommand} <b>: Aᴅᴅ Sᴜᴅᴏ Usᴇʀ[Oɴʟʏ Oᴡɴᴇʀ]</b>
 /{BotCommands.RmSudoCommand} <b>: Rᴇᴍᴏᴠᴇ Sᴜᴅᴏ Usᴇʀs[Oɴʟʏ Oᴡɴᴇʀ]</b>
 /{BotCommands.LogCommand} <b>: Gᴇᴛ Bᴏᴛ Lᴏɢ Fɪʟᴇ[Oɴʟʏ Oᴡɴᴇʀ & Sᴜᴅᴏ]</b>\n\n
-<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @MortalViking</b>
+<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @Cybertron_geek</b>
 '''
 
     help_string = f'''<b>🛰️Tʜᴇsᴇ Aʀᴇ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ👇👇</b>\n\n
