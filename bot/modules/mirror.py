@@ -138,13 +138,13 @@ class MirrorListener(listeners.MirrorListeners):
 
     def onUploadComplete(self, link: str, size):
         with download_dict_lock:
-            msg = f'<b>🍟Fɪʟᴇɴᴀᴍᴇ : </b><code>{download_dict[self.uid].name()}</code>\n<b>🍳Sɪᴢᴇ : </b><code>{size}</code>'
+            msg = f'<b>Fɪʟᴇɴᴀᴍᴇ : </b><code>{download_dict[self.uid].name()}</code>\n<b>🍳🙈Sɪᴢᴇ : </b><code>{size}</code>'
             buttons = button_build.ButtonMaker()
             if SHORTENER is not None and SHORTENER_API is not None:
                 surl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, link)).text
-                buttons.buildbutton("☄️Dʀɪᴠᴇ Lɪɴᴋ☄️", surl)
+                buttons.buildbutton("🤕Dʀɪᴠᴇ Lɪɴᴋ🤕", surl)
             else:
-                buttons.buildbutton("☄️Dʀɪᴠᴇ Lɪɴᴋ☄️", link)
+                buttons.buildbutton("🤕Dʀɪᴠᴇ Lɪɴᴋ🤕", link)
             LOGGER.info(f'Done Uploading {download_dict[self.uid].name()}')
             if INDEX_URL is not None:
                 share_url = requests.utils.requote_uri(f'{INDEX_URL}/{download_dict[self.uid].name()}')
@@ -152,9 +152,9 @@ class MirrorListener(listeners.MirrorListeners):
                     share_url += '/'
                 if SHORTENER is not None and SHORTENER_API is not None:
                     siurl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, share_url)).text
-                    buttons.buildbutton("🌋Iɴᴅᴇx Lɪɴᴋ🌋", siurl)
+                    buttons.buildbutton("⚡️Iɴᴅᴇx Lɪɴᴋ⚡️", siurl)
                 else:
-                    buttons.buildbutton("🌋Iɴᴅᴇx Lɪɴᴋ🌋", share_url)
+                    buttons.buildbutton("⚡️Iɴᴅᴇx Lɪɴᴋ⚡️", share_url)
             if BUTTON_THREE_NAME is not None and BUTTON_THREE_URL is not None:
                 buttons.buildbutton(f"{BUTTON_THREE_NAME}", f"{BUTTON_THREE_URL}")
             if BUTTON_FOUR_NAME is not None and BUTTON_FOUR_URL is not None:
