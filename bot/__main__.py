@@ -45,7 +45,7 @@ def start(update, context):
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id,update.message.chat.username,update.message.text))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         if update.message.chat.type == "private" :
-            sendMessage(f"<b>Hɪ👋</b>  <b>{update.message.chat.first_name}</b>.  <b>Wᴇʟᴄᴏᴍᴇ Tᴏ Mɪʀʀᴏʀ Bᴏᴛ Sᴇɴᴅ /help Tᴏ Cʜᴇᴄᴋ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ\n\n👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: @Cybertron_geek</b>", context.bot, update)
+            sendMessage(f"<b>Hɪ👋</b>  <b>{update.message.chat.first_name}</b>.  <b>Wᴇʟᴄᴏᴍᴇ Tᴏ Mɪʀʀᴏʀ Bᴏᴛ Sᴇɴᴅ /help Tᴏ Cʜᴇᴄᴋ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ\n\n👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: @Dsp_Sai</b>", context.bot, update)
         else :
             sendMessage("<b>I'ᴍ Aʟɪᴠᴇ Yᴀᴀʀ💞, ➼Tʜᴀɴᴋs Fᴏʀ Cʜᴇᴄᴋɪɴɢ😋🥰.</b>", context.bot, update)
     else :
