@@ -99,7 +99,7 @@ def bot_help(update, context):
 /{BotCommands.AddSudoCommand} <b>: Aᴅᴅ Sᴜᴅᴏ Usᴇʀ[Oɴʟʏ Oᴡɴᴇʀ]</b>
 /{BotCommands.RmSudoCommand} <b>: Rᴇᴍᴏᴠᴇ Sᴜᴅᴏ Usᴇʀs[Oɴʟʏ Oᴡɴᴇʀ]</b>
 /{BotCommands.LogCommand} <b>: Gᴇᴛ Bᴏᴛ Lᴏɢ Fɪʟᴇ[Oɴʟʏ Oᴡɴᴇʀ & Sᴜᴅᴏ]</b>\n\n
-<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @Cybertron_geek</b>
+<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @Dsp_Sai</b>
 '''
 
     help_string = f'''<b>🛰️Tʜᴇsᴇ Aʀᴇ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Iɴ Mʏ Sᴇʀᴠɪᴄᴇ👇👇</b>\n\n
@@ -116,7 +116,7 @@ def bot_help(update, context):
 /{BotCommands.ListCommand} <b>[name]: Sᴇᴀʀᴄʜᴇs Iɴ Tʜᴇ Oᴡɴᴇʀs Tᴇᴀᴍ ᴅʀɪᴠᴇ Fᴏʟᴅᴇʀ</b>
 /{BotCommands.StatsCommand} <b>: Sʜᴏᴡ Sᴛᴀᴛs Oꜰ Tʜᴇ Mᴀᴄʜɪɴᴇ</b>
 /{BotCommands.PingCommand} <b>: Cʜᴇᴄᴋ Pɪɴɢ!</b>\n\n
-<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @Cybertron_geek</b>
+<b>👮𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 : @Dsp_Sai</b>
 '''
 
     if CustomFilters.sudo_user(update) or CustomFilters.owner_filter(update):
