@@ -49,7 +49,7 @@ def start(update, context):
         else :
             sendMessage("<b>I'ᴍ Aʟɪᴠᴇ Yᴀᴀʀ💞, ➼Tʜᴀɴᴋs Fᴏʀ Cʜᴇᴄᴋɪɴɢ😋🥰.</b>", context.bot, update)
     else :
-        sendMessage("<b>Oᴏᴘs!🤭 Yᴏᴜ Aʀᴇ Nᴏᴛ ᴀɴ Aᴜᴛʜᴏʀɪᴢᴇᴅ Usᴇʀ Tᴏ Usᴇ Mᴇ.</b>", context.bot, update)
+        sendMessage("<b>Oᴏᴘs!🤭 Yᴏᴜ Aʀᴇ Nᴏᴛ ᴀɴ Aᴜᴛʜᴏʀɪᴢᴇᴅ Usᴇʀ Tᴏ Usᴇ Mᴇ Contact My Developer @Dsp_Sai For More Help.</b>", context.bot, update)
 
 
 @run_async
