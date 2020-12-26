@@ -1,31 +1,19 @@
 # Heroku Deployable Method:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/sumanth445/ultimatemirror)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Dsprasad1999/mirror)
 
-# Important - Read these points first
-- Original repos are:
-```
-https://github.com/lzzy12/python-aria-mirror-bot
-https://github.com/magneto261290/magneto-python-aria
-https://github.com/SVR666/LoaderX-Bot
-```
+
+
+
+
 - I have collected some cool features from various repositories and merged them in one.
 - So, credits goes to original repo holder, not to me. I have just collected them.
 - This (or any custom) repo is not supported in official bot support group.
 - So if you have any issue then check first that issue is in official repo or not, You are only allowed to report that issue in bot support group if that issue is also present in official repo.
-
-## Credits :-
-- First of all, full credit goes to [Shivam Jha aka lzzy12](https://github.com/lzzy12) He build up this bot from scratch.
-- Then a huge thanks to [Sreeraj V R](https://github.com/SVR666) You can checkout his [repo here](https://github.com/SVR666/LoaderX-Bot)
-- Features added from [Sreeraj V R's](https://github.com/SVR666) repo -
-- Features added from [Magneto](https://github.com/magneto261290/magneto-python-aria/commits/master) repo -
-
 ```
 1. Added Inline Buttons
 2. Added /del command to delete files from drive
 3. /list module will post search result on telegra.ph
 ```
-- Special thanks to [archie](https://github.com/archie9211) for very much useful feature **Unzipmirror**
-- Features added from [archie's](https://github.com/archie9211) repo
 ```
 1. unzipmirror
 2. Update tracker list dynamically
@@ -81,10 +69,7 @@ log - Bot Log [owner only]
 Deploying is pretty much straight forward and is divided into several steps as follows:
 ## Installing requirements
 
-- Clone this repo:
-```
-git clone https://github.com/usmanmughalji/drive-bot-ultimate
-cd drive-bot-ultimate
+
 ```
 
 - Install requirements
